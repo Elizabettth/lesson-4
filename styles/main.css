@@ -1,0 +1,696 @@
+/*settings*/
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*basic margins*/
+.container{
+    margin: 0 auto ;
+    width: 1400px;
+}
+
+/*header*/
+.header{
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header__logo{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header__nav{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 692px;
+}
+
+.header__nav-list {
+    margin-left: auto;
+    margin: 0px 0 0 99px
+}
+
+.header__link{
+    text-decoration: none;color: 
+    rgba(255, 255, 255, 0.7);
+}
+
+.header__logo-name{
+    width: 68px;
+    height: 31px;
+    left: 110px;
+    top: 20px;
+    font-family: "Raleway";
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__logo-name-changes{
+    width: 68px;
+    height: 31px;
+    left: 110px;
+    top: 20px;
+    font-family: "Raleway";
+    font-size: 30px;
+    line-height: 35px;
+    color: #EC7979;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__nav-list-name{
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0 20px 44px;
+}
+
+/*hero*/
+.hero {
+    position: relative;
+    max-height: 600px;
+    background-image: url("../img/townHero.png");
+}
+
+.hero::before{
+    content: "";
+    background-color:rgba(0,0,0,.4);
+    height:100%;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.hero .container {
+    position: relative;
+
+}
+
+.hero__text-logo{
+    display: inline-block;
+    margin: 0 0 35px 0;
+}
+
+.hero__logo{
+    width: 129px;
+    height: 70px;
+    left: 110px;
+    top: 108px;
+    font-family: "Roboto";
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin: 108px 0 35px 0;
+}
+
+.hero__logo-name-changes{
+    width: 129px;
+    height: 70px;
+    left: 110px;
+    top: 108px;
+    font-family: "Roboto";
+    font-size: 60px;
+    line-height: 70px;
+    color: #EC7979;
+    font-weight: normal;
+}
+
+.hero__sublogo{
+    width: 544px;
+    height: 99px;
+    left: 110px;
+    top: 210px;
+    font-family: "Raleway";
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0 0 70px 0; 
+    font-weight: normal;
+}
+
+.hero__text{
+    width: 282px;
+    height: 38px;
+    left: 110px;
+    bottom: 182px;
+    font-family: "Raleway";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 35px 0;
+}
+
+.hero__btn{
+    border: 1px solid #FFFFFF;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: none;
+    margin: 0 0 40px 0;
+    padding: 11px 25px;
+}
+
+.hero__btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*form*/
+.hero__form {
+    position: absolute;
+    right: 0;
+    top: 110px;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 370px;
+    height: 370px;
+    margin-left: auto;
+}
+
+.hero__form-wrapper {
+    padding: 0 59px;
+}
+
+.hero__form-title {
+    font-family: "Open Sans";
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    margin: 15px 0 58px 0;
+}
+
+.hero__form-title-changes {
+    width: 252px;
+    height: 27px;
+    left: 978px;
+    top: 125px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #EC7979;
+    text-transform: uppercase;
+}
+
+
+.hero__form-input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom:1px solid #BDBDBD;
+    padding: 18px 0;
+    outline: none;
+}
+
+.hero__form-btn {
+    width: 100%;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 15px;
+    height: 54px;
+    color: #FFFFFF;
+    background: #EC7979;
+    border-radius: 0px 0px 8px 8px;
+    outline: none;
+    border: none;
+    margin: 58px 0 0 0;
+}
+
+/*social*/
+.social{
+    width: 100%;
+    height: 110px;
+    background: #F8EFEF;
+}
+
+.social__text{
+    display: inline-block;
+    vertical-align: middle; 
+    max-width: 365px;
+}
+
+.social__title{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    margin: 15px 0 0 0;
+}
+
+.social__information{
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+    margin: 15px 0 15px 0;
+}
+
+.social__img {
+    /* C оберткой и без нее не получается одновременно выровнять картинку по центру и прижать к правому боку */
+    /* Margin left auto & text align right не работают*/
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 347px;
+}
+
+/*feautures*/
+.feautures{
+    max-height: 600px;
+
+}
+
+.feautures__tabs{
+    vertical-align: top;
+    display: inline-block;
+    margin: 125px 0;
+}
+
+.feautures__tab{
+    width: 110px;
+    height: 102px;
+    background: #333333;
+    border-radius: 4px;
+    display: block;
+    margin: 10px 0 0 0;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin: 0 120px 10px 0;
+}
+
+.feautures__tab:hover{
+    background: #EC7979;
+    border: none;
+    outline: none;
+}
+
+.feautures__text{
+    display: inline-block;
+    max-width: 570px;
+    margin: 0 135px;
+}
+
+.feautures__title{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 125px 0 58px 0;
+}
+
+.feautures__subname{
+    margin: 0 0 90px 0;
+}
+
+.feautures__subtitle{
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #86878B;
+}
+
+.feautures__button{
+    font-family: "Open Sans";
+    background: #EC7979;
+    border: 1px solid #FFFFFF;
+    width: 135px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.feautures__button:hover{
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.feautures__img{
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 347px;
+}
+
+/*about*/
+.about{
+    min-height: 600px;
+}
+
+/*axit model*/
+.axit__maket{
+    width: 668px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1px;
+}
+
+.axit__title{
+    padding-bottom: 76px;
+    position: relative;
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 80px 0 0 0;
+    text-align: center;
+}
+
+.axit__title::after{
+    content: '';           /*!!*/
+    position: absolute;
+    left: 46%;
+    background: rgb(255, 0, 0);
+    width: 64px;
+    height: 2px;
+    top: 76px;
+}
+
+.axit__subtitle{     
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+    text-align: center;
+}
+
+/*card in about*/
+.about__card{
+    width: 1118px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.card__lamp{
+    display: inline-block;
+    width: 350px;
+    margin: 0 30px 0 0;
+}
+
+.card__keyboard{
+    width: 350px;
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.card__light{
+    width: 350px;
+    display: inline-block;
+}
+
+.about__card-wrapper{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #E72424;
+    display: inline-block;
+}
+
+.card__img{
+    margin: 20px auto;
+    display: block;
+}
+
+.card__title{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 30px 0 15px 0;
+}
+
+.card__information{
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    max-width: 350px;
+}
+
+/*price*/
+.price{
+    min-height: 800px;
+    background: #F5F5F5;
+}
+
+.price__card{
+    text-align: center;
+}
+
+.price__card-wrapper{
+    display: inline-block;
+    margin: 40px;
+}
+
+.price__card-title{
+    background: #333333;
+}
+
+.price__card-title-text{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 140px;
+}
+
+.price__card-cost{
+    background: #333333;
+}
+
+.price__card-cost-information{
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 30px 145px;
+    margin: 1px 0;
+}
+
+.price__card-subtitle{
+    background: #333333;
+}
+
+.price__card-subtitle-information{
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px 130px;
+}
+
+.price__card-item{
+    background: rgb(255, 255, 255);
+    margin: 2px;
+}
+
+.price__card-item-text{
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #86878B;
+    padding: 10px 125px;
+}
+
+/*tesimonials*/
+.testimonials{
+    min-height: 600px;
+}
+
+.rewiew__card-comment{
+    text-align: center;
+    width: 300px;
+    height: 110px;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+    background-color: #E2E2E2;
+    border-radius: 7px;
+    margin: 70px 83px 20px 81px;
+    vertical-align: middle;  
+    padding: 10px 18px 8px 18px;
+    box-sizing: border-box;
+}
+
+.rewiew__card-manager{
+    display:inline-block;
+}
+
+.rewiew__manager-photo{
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.rewiew__card-author{
+    text-align: center;
+}
+
+.rewiew__card-author-text{
+    display: inline-block;
+    text-align: right;
+}
+
+.rewiew__author-name{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    margin: 15px 0 10px 10px;
+}
+
+.rewiew__author-profession{
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+}
+
+/*design*/
+.design{
+    min-height: 325px;
+    position: relative;
+    background-image: url("../img/townDesing.png");
+}
+
+.design::before{
+    content: "";
+    background-color:rgba(0,0,0,.4);
+    height:100%;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.axit__title--inverted-color{
+    color: rgb(255, 255, 255);
+}
+
+.axit__subtitle--inverted-color{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.design__btn{
+    border: 1px solid #FFFFFF;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: none;
+    padding: 11px 25px;
+    margin: 60px 640px;
+}
+
+.design__btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+    
+
+/*contact*/
+.contact{
+    min-height: 700px;
+}
+
+.contact__form-wrapper{ 
+    margin-top: 30px;
+}
+
+.contact__form-input-form{
+    display: inline-block;
+    height: 1px;
+}
+
+.contact__form-input {
+    width: 565px;
+    display: block;
+    border: none;
+    border-bottom:1px solid #BDBDBD;
+    padding: 18px 0;
+    outline: none;
+    margin: 45px 0;
+}
+
+.contact__form-input-message{
+    width: 565px;
+    display: block;
+    border: none;
+    border-bottom:1px solid #BDBDBD;
+    padding: 18px 0;
+    outline: none;
+    margin-left: 250px;
+}
+
+.contact__form-btn {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    background: #EC7979;
+    outline: none;
+    border: none;
+    padding: 11px 32px;
+    width: 166px;
+    margin: 80px 44% 0;
+}
+
+.contact__form-btn:hover{
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+/*footer*/
+.footer{
+    min-height: 105px;
+    background: #000000;
+}
+
+.footer__social-icons{
+    width: 320px;
+    height: 23px;
+    margin: 40px 39%;
+}
